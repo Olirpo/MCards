@@ -5,6 +5,9 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,600;1,400;1,900&display=swap');
     div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         background-color: rgba(97, 0, 161, 0.301);;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -16,7 +19,7 @@
         border: 2px white solid;
         border-radius: 1.5rem;
         box-sizing: border-box;
-        padding: 0 3rem;
+        padding: 0 3rem 1rem;
     }
     h3{
         font-size: 2rem;
