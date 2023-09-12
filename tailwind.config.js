@@ -4,13 +4,17 @@ export default {
   theme: {
     extend: {
       backgroundImage : {
-        'primer-fondo': "url('images/fondo.png')",
-        'segundo-fondo': "url('images/fondo-conoce-mas.png')"
+        'primer-fondo': "linear-gradient(to right, rgba(0,0,0,0.1),rgba(0,0,0,0.75)),url('images/fondo.png')",
+        'segundo-fondo': "linear-gradient(to right, rgba(0,0,0,0.1),rgba(0,0,0,0.75)),url('images/fondo-conoce-mas.png')"
 
       },
       fontFamily :{
         'poppins' : ['Poppins', 'sans-serif']
+      },
+      backgroundColor : {
+        'violet-card': 'rgba(97, 0, 161, 0.301)'
       }
+
     }
   },
   plugins: []

@@ -5,21 +5,9 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,600;1,400;1,900&display=swap');
     div{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: rgba(97, 0, 161, 0.301);;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        height: 100vh;
-        font-family: 'Poppins', sans-serif;
-        color: white;
-        height: 65vh;
-        width: 30vw;
-        border: 2px white solid;
-        border-radius: 1.5rem;
-        box-sizing: border-box;
-        padding: 0 3rem 1rem;
+        width: 30%;
     }
     h3{
         font-size: 2rem;
@@ -27,8 +15,8 @@
         ;    }
 </style>
 
-<div>
-    <h3>{title}</h3>
+<div class="h-5/6 flex flex-col justify-around bg-violet-card font-poppins text-white box-border border-2 rounded-3xl border-white border-solid pt-0 px-12 pb-0">
+    <h3 class="text-base text-center" >{title}</h3>
     <p>{content}</p>
 </div>
 

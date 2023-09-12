@@ -3,21 +3,4 @@
     export let color = '';
     export let href = '/';
 </script>
-<a style={'background-color: ' + color} data-sveltekit-reload href={href}>{texto}</a>
-<style>
-      a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        color: white;
-        width: 225px;
-        height: 50px;
-        border: 2px rgb(165, 165, 165) solid;
-        border-radius: 10px;
-        font-family: 'Poppins', sans-serif;
-        font-size: large;
-        font-weight: 600;
-        text-align: center;
-    }
-</style>
+<a style={'background-color: ' + color} class="flex justify-center items-center text-white h-12 w-56 cursor-pointer rounded-lg border-2 border-slate-300 border-solid font-poppins text-lg font-semibold text-center non-italic" data-sveltekit-reload href={href}>{texto}</a>
