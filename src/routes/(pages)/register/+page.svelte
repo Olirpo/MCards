@@ -5,6 +5,6 @@
     /** @type {import('./$types').PageData} */
     export let data;
 </script>
-<h1>hola register</h1>
+<h1 class="titulo">hola register</h1>
 
 

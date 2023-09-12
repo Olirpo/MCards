@@ -2,5 +2,5 @@
     /** @type {import('./$types').LayoutData} */
     export let data;
 </script>
-<div class="titulo">MCards</div>
+<h1>MCards</h1>
 <slot/>

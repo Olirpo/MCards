@@ -3,7 +3,7 @@
     export let color = '';
     export let href = '/';
 </script>
-<a style={'background-color: ' + color} href={href}>{texto}</a>
+<a style={'background-color: ' + color} data-sveltekit-reload href={href}>{texto}</a>
 <style>
       a{
         display: flex;

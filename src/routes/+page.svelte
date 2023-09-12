@@ -11,20 +11,20 @@
     import A from '$lib/button-a.svelte'
 </script>  
 
-<main>
-    <a href="/login">
+<main class="flex flex-col items-end w-full h-screen bg-no-repeat bg-primer-fondo bg-cover bg-center text-white font-poppins box-border p-6">
+    <a data-sveltekit-reload href="/login" class="text-white no-underline">
         Inicia Sesión
     </a>
     <div>
-        <h1 class="titulo">MCards</h1>
-        <span>Desarrolla tu <strong>consciencia</strong> musical para ser mejor musico. <br> <strong>Oye</strong> y <strong>crea</strong> al siguiente nivel.</span>
-        <div class="buttons">
+        <h1 class="flex justify-right mx-0 mt-14 mb-10 font-black italic text-5xl">MCards</h1>
+        <span class="text-right italic text-xl font-normal">Desarrolla tu <strong>consciencia</strong> musical para ser mejor musico. <br> <strong>Oye</strong> y <strong>crea</strong> al siguiente nivel.</span>
+        <div class="flex justify-around mx-0 my-5">
             <Button click={scrollToCategoria} texto="Conoce más" color=#3e007183></Button>
             <A texto="Registrarse" color=#aa225683 href="/register"></A>
           </div>
     </div>
 </main>
-<section>
+<section class="flex flex-col justify-center align-center w-full h-screen bg-no-repeat bg-segundo-fondo bg-cover bg-right-top box-border">
     <div class="carousel">
         <Card></Card>
         <Card></Card>
