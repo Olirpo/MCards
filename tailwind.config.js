@@ -12,7 +12,8 @@ export default {
         'poppins' : ['Poppins', 'sans-serif']
       },
       backgroundColor : {
-        'violet-card': 'rgba(97, 0, 161, 0.301)'
+        'violet-card': 'rgba(97, 0, 161, 0.301)',
+        'traslucido':  'rgba(0,0,0,0.75)'
       }
 
     }
