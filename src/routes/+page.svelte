@@ -1,8 +1,8 @@
 <script>
-    import NoLogged from "$lib/No-logged.svelte";
-    import Logged from "$lib/Logged.svelte";
+    import NoLogged from "$lib/components/No-logged.svelte";
+    import Logged from "$lib/components/Logged.svelte";
     let user = {
-        loggedIn : true
+        loggedIn : false
     }
 </script>
 {#if user.loggedIn}

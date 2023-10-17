@@ -1,5 +1,5 @@
 <script>
-    import Categoria from '$lib/Categoria.svelte'
+    import Categoria from '$lib/components/Categoria.svelte'
 </script>  
 
 <main class="flex flex-col items-center w-full h-screen bg-no-repeat bg-primer-fondo bg-cover bg-center text-white font-poppins box-border pt-4 pb-6">
@@ -18,5 +18,5 @@
 </main>
 
 <style>
-    @import '../styles/landing.css';
+    @import './src/styles/landing.css';
 </style>
