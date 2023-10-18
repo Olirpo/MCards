@@ -1,6 +1,10 @@
 <script>
+<<<<<<< HEAD:src/lib/Logged.svelte
     import Categoria from '$lib/Categoria.svelte';
     import Header from '$lib/Header.svelte';
+=======
+    import Categoria from '$lib/components/Categoria.svelte'
+>>>>>>> 8d656298268d0b5286dcd2ab426c0f10c7a0c924:src/lib/components/Logged.svelte
 </script>  
 
 <main class="flex flex-col items-center w-full h-screen bg-no-repeat bg-primer-fondo bg-cover bg-center text-white font-poppins box-border pt-4 pb-6">
@@ -14,5 +18,5 @@
 </main>
 
 <style>
-    @import '../styles/landing.css';
+    @import './src/styles/landing.css';
 </style>

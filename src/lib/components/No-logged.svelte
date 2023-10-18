@@ -6,9 +6,9 @@
         }
         
     }
-    import Card from '$lib/present-card.svelte'
-    import Button from '$lib/button.svelte'
-    import A from '$lib/button-a.svelte'
+    import Card from '$lib/components/present-card.svelte'
+    import Button from '$lib/components/button.svelte'
+    import A from '$lib/components/button-a.svelte'
 </script>  
 
 <main class="flex flex-col items-end w-full h-screen bg-no-repeat bg-primer-fondo bg-cover bg-center text-white font-poppins box-border p-6">
@@ -32,9 +32,9 @@
     <A texto="Comienza Ahora" color="#14bd30a8" href="/register"></A>
 </section>
 <style>
+    @import './src/styles/landing.css';
     strong{
         font-style: normal;
         font-weight: 600;
     }
-    @import '../styles/landing.css';
 </style>
