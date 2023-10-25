@@ -1,0 +1,3 @@
+import { createClient } from '@supabase/supabase-js'
+
+export const supabase = createClient('https://kqgnuansslwutlemszue.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtxZ251YW5zc2x3dXRsZW1zenVlIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTc1Njc1NTEsImV4cCI6MjAxMzE0MzU1MX0.tobfub7kHNFTb9wKVDikFxE8B8fakPk8U_eaAo0o35s')
