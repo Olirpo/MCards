@@ -32,7 +32,7 @@
     <A texto="Comienza Ahora" color="#14bd30a8" href="/register"></A>
 </section>
 <style>
-    @import './src/styles/landing.css';
+    @import '../../styles/landing.css';
     strong{
         font-style: normal;
         font-weight: 600;

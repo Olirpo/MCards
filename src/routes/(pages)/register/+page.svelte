@@ -1,6 +1,5 @@
 <script>
     /** @type {import('./$types').PageData} */
-    export let data;
     import Button from '$lib/components/button.svelte'
     import A from '$lib/components/button-a.svelte'
     import Input from '$lib/components/Input.svelte'
