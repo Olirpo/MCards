@@ -1,10 +1,11 @@
 <script lang="ts">
-  import "../styles/app.css";
-  import { invalidate } from '$app/navigation';
-  import { onMount } from 'svelte'
+    import "../styles/app.css";
+    import { invalidate } from "$app/navigation";
+    import { onMount } from "svelte";
 
-  export let data
+    export let data;
 
+    /*
   let { supabase, session } = data
   $: ({ supabase, session } = data)
 
@@ -19,6 +20,8 @@
 
     return () => subscription.unsubscribe()
   });
+  */
 </script>
 
 <slot />
+
