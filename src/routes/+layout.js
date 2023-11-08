@@ -1,20 +1,19 @@
 // src/routes/+layout.js
-import { PUBLIC_SUPABASE_ANON_KEY, PUBLIC_SUPABASE_URL } from '$env/static/public'
-import { createSupabaseLoadClient } from '@supabase/auth-helpers-sveltekit'
 
-export const load = async ({ fetch, data, depends }) => {
-  depends('supabase:auth')
+import { redirect } from "@sveltejs/kit";
 
-  const supabase = createSupabaseLoadClient({
-    supabaseUrl: PUBLIC_SUPABASE_URL,
-    supabaseKey: PUBLIC_SUPABASE_ANON_KEY,
-    event: { fetch },
-    serverSession: data.session,
-  })
+export const load = async ({ url }) => {
 
-  const {
-    data: { session },
-  } = await supabase.auth.getSession()
+    let params = {};
 
-  return { supabase, session }
+    url.href.split('#')[1]?.split('&')?.map((str) =>
+        str.split('=')).forEach(([key, value]) => {
+            params[key] = value;
+        })
+
+
+    if (params?.access_token && params?.refresh_token) {
+        throw redirect(303, `${url.origin}?access_token=${params?.access_token}&refresh_token=${params?.refresh_token}`)
+    }
+    return {};
 }
