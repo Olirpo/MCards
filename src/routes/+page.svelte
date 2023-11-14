@@ -6,9 +6,6 @@
 </script>
 
 {#if data.session}
-    <h1>
-        ESTOY LOGUEADO CON GOOGLE Y MI NOMBRE EMAIL: {data.session.user.email}
-    </h1>
     <Logged />
 {:else}
     <NoLogged />
